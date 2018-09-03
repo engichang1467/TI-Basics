@@ -26,6 +26,6 @@ Lbl 2
 Disp "ANGLE:"
 Disp "SIDES=?"
 Prompt A,B,C
-cos<sup>-1</sup>((B²+C²-A²)/(2BC))➔W
+cos⁻¹((B²+C²-A²)/(2BC))➔W
 Lbl θ
 W
