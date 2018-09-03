@@ -1,0 +1,31 @@
+Degree
+Disp "A²=B²+C²"
+Disp "-2BCcos(θ)"
+Pause
+Disp "1:SIDE"
+Disp "2:ANGLE"
+Prompt X
+If X=2
+Then
+Goto 2
+Else
+Disp "WHICH SIDE?"
+Disp "1:OPPOSITE ANGLE"
+Disp "2:OTHER"
+Prompt Y
+If Y=1
+Then
+Prompt B,C,θ
+√(B²+C²-2BCcos(θ))➔W
+Goto θ
+Else
+Prompt A,C,θ
+Ccos(θ)➔W
+Goto θ
+Lbl 2
+Disp "ANGLE:"
+Disp "SIDES=?"
+Prompt A,B,C
+cos<sup>-1</sup>((B²+C²-A²)/(2BC))➔W
+Lbl θ
+W
